@@ -11,4 +11,4 @@ The main difference between GET and POST methods lies in how data is sent to the
 
 3. How to send the files as response in express js?	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In Express.js, you can send files as a response using the res.sendFile() method. Simply provide the path to the file as an argument to this method in your route handler.
+In Express.js, We can send files as a response using the res.sendFile() method. Simply provide the path to the file as an argument to this method in our route handler.
