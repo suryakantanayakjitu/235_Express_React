@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            div {
+                border: 1px solid gray;
+                border-top-width: 35px;
+                padding: 5px;
+                width: 400px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+        
+            div h2 {
+                color: white;
+                text-align: center;
+                margin: 0px;
+                margin-top: -35px;
+            }
+        </style>
+    </head>
+
+<body>
+    <h1>Welcome to Express EJS program</h1>
+    <div>
+        <h2>Scalar Data</h2>
+        <h4>Name of the User is <%=uname%></h2>
+        <h4>Age of the User is <%=age%></h2>
+        <h4>Location of the User is <%=Loc%></h2>
+    </div>
+
+    <div>
+        <h2>Array Of String</h2>
+        <ul>
+            <%   for(let item of citiesOfArray){   %>
+                <li> <%=item%></li>
+                <% } %>
+            </ul>
+        </div>
+        
+    <div>
+        <h2>Array Of String Object</h2>
+        Department No: <%=deptObj.dptno%> <br>
+        Department Name: <%=deptObj.dptName%> <br>
+        Department Location: <%=deptObj.dptloc%> <br>
+    </div>
+    <div>
+        <h2>Array of Objects</h3>
+
+         <table border="2" width="400" cellspacing="0" cellpadding="5">
+
+            <tr>
+                <th>Dept Number</th>
+                <th>Dept Name</th>
+                <th>Location</th>
+            </tr>
+            
+            <% for(let  item of deptsArray){  %>
+                <tr> 
+                     <td>   <%=item.deptno%>  </td> 
+                     <td>   <%=item.dname%>  </td> 
+                     <td>   <%=item.loc%>  </td> 
+                </tr>
+            <% } %> 
+
+         </table>   
+        
+    </div>
+
+</body>
+
+</html>

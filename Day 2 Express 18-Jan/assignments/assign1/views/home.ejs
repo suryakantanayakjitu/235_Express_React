@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .card{
+                border: 3px solid blue;
+                padding: 30px 10px 30px 10px;
+                width: 300px;
+                margin: 0 20px 20px 20px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                background-color: mintcream;
+            }
+            .top_card{
+                justify-content: center;
+            }
+            img{
+                height: 150px;
+                width: 150px;
+                border-radius: 5px;
+            }
+            h2{
+                margin: 3px 0;
+            }
+            p{
+                margin: 3px 0;
+            }
+
+        </style>
+    </head>
+
+<body>
+<div class="container">
+    <% users.forEach(user=> { %>
+        <div class="card">
+            <div class="top_card">
+                <img src="<%= user.avatar %>" alt="Avatar">
+            </div>
+            <div class="bodycard">
+                <h2>
+                    <%= user.first_name %>
+                        <%= user.last_name %>
+                </h2>
+            </div>
+            <div class="footer_card">
+                <p>
+                    <%= user.email %>
+                </p>
+            </div>
+        </div>
+    <% }) %>
+</div>
+</body>
+
+</html>

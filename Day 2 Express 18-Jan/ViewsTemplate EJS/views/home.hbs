@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        div {
+            border: 1px solid gray;
+            border-top-width: 20px;
+            padding: 5px;
+            width: 400px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        div h3 {
+            color: white;
+            text-align: center;
+            margin: 0px;
+            margin-top: -25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Developing Web Applications using Express -- using Handlebar View Engine</h3>
+    <hr />
+    <div>
+        <h3>Scalar Data</h3>
+        User Name : {{uname}} <br />
+        User Age : {{age}} <br />
+        User Email : {{email}} <br />
+    </div>
+
+    <div>
+        <h3>Array of Strings</h3>
+
+        <ul>
+            {{#each citiesArray}}
+            <li> {{this}} </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div>
+        <h3>Single Object</h3>
+        Dept Number : {{deptObj.deptno}} <br />
+        Dept Name : {{deptObj.dname}} <br />
+        Dept Location : {{deptObj.loc}} <br />
+    </div>
+
+    <div>
+        <h3>Array of Objects</h3>
+
+        <table border="2" width="400" cellspacing="0" cellpadding="5">
+
+            <tr>
+                <th>Dept Number</th>
+                <th>Dept Name</th>
+                <th>Location</th>
+            </tr>
+
+
+            {{#each deptsArray}}
+            <tr>
+                <td> {{this.deptno}} </td>
+                <td> {{this.dname}} </td>
+                <td> {{this.loc}} </td>
+            </tr>
+            {{/each}}
+
+
+        </table>
+
+    </div>
