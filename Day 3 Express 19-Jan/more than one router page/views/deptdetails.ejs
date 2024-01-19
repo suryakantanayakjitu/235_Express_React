@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <style>
+        div
+        {
+           border:1px solid gray; 
+           border-top-width: 20px; 
+           padding:5px; 
+           width:500px; 
+           border-radius:10px;
+           margin-bottom: 10px;
+        }
+
+        div h3
+        {
+           color:white; 
+           text-align:center; 
+           margin: 0px; 
+           margin-top: -25px;
+        }
+    </style>   
+</head>
+
+<body>
+    
+    <div>
+        <h3>Selected Department Details</h3>
+        Dept Number  :   <%=deptObj.deptno%>    <br/>
+        Dept Name  :   <%=deptObj.dname%>    <br/>
+        Dept Location  :   <%=deptObj.loc%>    <br/>        
+    </div>
+
+    <hr/>
+    <a href="/">Back to Home</a>    |
+    <a href="/depts/AllDepts">Back to All Depts</a>
+     
+</body>
+
+</html>

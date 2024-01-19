@@ -1,0 +1,32 @@
+<html>
+<head>
+     
+</head>
+
+<body>
+    <h3>User Login</h3>
+    <hr /> 
+
+      <fieldset>
+        <legend>User Login Form</legend>
+
+        <form action="/user/Login"  method="POST">
+            User Id :  <input  type="text" id="t1" name="t1"  />
+            <br/><br/>
+
+            Password :  <input  type="password" id="t2" name="t2"  />
+            <br/><br/>
+
+            <input type="submit" value="Login" />
+            <p> <%=errorMessage%> </p> 
+           
+        </form>
+
+      </fieldset>
+
+
+    <hr/>
+    <a href="/">Back to Home</a>    
+</body>
+
+</html>
