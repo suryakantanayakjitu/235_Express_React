@@ -4,7 +4,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/Mphasis235');
 
 var Schema = mongoose.Schema;
 
-var StddentsModelSchema = new Schema(
+var EmployeeModelSchema = new Schema(
     {   
         empno: Number,
         ename: String,
@@ -15,6 +15,6 @@ var StddentsModelSchema = new Schema(
     }, 
     { versionKey: false  } );
 
-var EmpModel = mongoose.model('employees', StddentsModelSchema );
+var EmpModel = mongoose.model('employees', EmployeeModelSchema );
 
 module.exports = EmpModel;
