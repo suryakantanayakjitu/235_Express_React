@@ -15,8 +15,7 @@ var StddentsModelSchema = new Schema(
     }, 
     { versionKey: false  } );
 
-var StddentsModel = mongoose.model('employees', StddentsModelSchema );
+var EmpModel = mongoose.model('employees', StddentsModelSchema );
 
-// Exporting StddentsModel 
-module.exports = StddentsModel;
+module.exports = EmpModel;
 
