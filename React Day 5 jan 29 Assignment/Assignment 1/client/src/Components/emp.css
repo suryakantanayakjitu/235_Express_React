@@ -1,0 +1,38 @@
+.EMployeeDetail table tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.EMployeeDetail table tr:nth-child(even){
+    background-color: #fff;
+}
+.EMployeeDetail table tr:nth-child(odd){
+    background-color: bisque;
+}
+.getdata{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.getdata input{
+    padding: 10px;
+    margin-inline: 10px;
+}
+.btnCls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+.btn{
+    padding: 5px;
+    background-color: greenyellow;
+    font-weight: 700;
+    color: black;
+    margin-inline-end: 20px;
+}
+.btn:hover{
+    background-color: black;
+    color: greenyellow;
+}
