@@ -18,4 +18,3 @@ var StddentsModelSchema = new Schema(
 var EmpModel = mongoose.model('employees', StddentsModelSchema );
 
 module.exports = EmpModel;
-
