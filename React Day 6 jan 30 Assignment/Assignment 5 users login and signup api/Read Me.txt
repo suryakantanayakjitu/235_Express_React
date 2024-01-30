@@ -1,0 +1,6 @@
+Just do the 
+
+ npm install
+
+ in both the client and server folder terminal
+ and it will work. no need to change anything.
